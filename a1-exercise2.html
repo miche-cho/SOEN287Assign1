@@ -1,27 +1,14 @@
 <?xml version ="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE xhtml PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-
-<style>
-ul.a {
-	list-style-type: decimal;
-}
-ul.b {
-	list-style-type: lower-alpha;
-}
-ul.c {
-	list-style-type: lower-roman;
-}
-table {
-    border:0;
-}
-</style>
+<head><title> Exercise 2</title>
+</head>
 <body>
 <table>
     <tr>
         <td>
-            <li><ul>
+            <ul>
         		<li>Outer-1</li>
         		<li>Outer-2</li>
             		<li><ul>
@@ -38,26 +25,25 @@ table {
             		</ul></li>
               	<li>Outer-3</li>
               </ul>
-            </li>
+            
          </td>
 	    <td>
-         <li><ul class = "a">
+         <ul style="list-style-type: decimal">
         	<li>Outer-1</li>
         	<li>Outer-2</li>
-            	<li><ul class="b" >
+            	<li><ul style="list-style-type: lower-alpha" >
             	<li>Inner-1</li>
             	<li>Inner-2</li>
-                	<li><ul class="c">
+                	<li><ul style="list-style-type: lower-roman">
                 	<li>Deep-1</li>
                     <li>Deep-2</li>
                 	</ul></li>
             	</ul></li>
                 <li>Outer-3</li>  
-                	<li><ul class = "b">
+                	<li><ul style = "list-style-type: lower-alpha">
                     <li>Inner-3</li> 
-                    </ul></li>
-                    </ul></li>
-   
+                    </ul>
+                   </li> </ul>
         </td>
     </tr>
 </table>
