@@ -2,36 +2,63 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<body>
+
 <style>
-table, td,td {
+ul.a {
+	list-style-type: decimal;
+}
+ul.b {
+	list-style-type: lower-alpha;
+}
+ul.c {
+	list-style-type: lower-roman;
+}
+table {
     border: ;
 }
 </style>
+<body>
 <table>
     <tr>
         <td>
-    <ul>
-        <li>Outer-1</li>
-        <li>Outer-2</li>
             <ul>
-            <li>Inner-1</li>
-            <li>Inner-2</li>
-            <li>Inner-3</li>
-                <ul>
-                <li>Deep-1</li>
-                </ul>
-            <li>Inner-4</li>
-                <ul>
-                <li>Deep-2</li>
-                </ul>
-            </ul>
-        <li>Outer-3</li>
-    </ul>
-    </td>
-    <td>
-    <ul>
-        <li>Outer-1</li>
+        		<li>Outer-1</li>
+        		<li>Outer-2</li>
+            		<ul>
+            		<li>Inner-1</li>
+            		<li>Inner-2</li>
+            		<li>Inner-3</li>
+                		<ul>
+                		<li>Deep-1</li>
+                		</ul>
+            		<li>Inner-4</li>
+                		<ul>
+                		<li>Deep-2</li>
+                		</ul>
+            		</ul>
+              	<li>Outer-3</li>
+              </ul>
+         </td>
+	    <td>
+         <ul class = "a">
+        	<li>Outer-1</li>
+        	<li>Outer-2</li>
+            	<ul class="b" >
+            	<li>Inner-1</li>
+            	<li>Inner-2</li>
+                	<ul class="c">
+                	<li>Deep-1</li>
+                    <li>Deep-2</li>
+                	</ul>
+            	</ul>
+                <li>Outer-3</li>  
+                	<ul class = "b">
+                    <li>Inner-3</li> 
+                    </ul>
+                    </ul>
+   
+        </td>
+    </tr>
 </table>
 </body>
 </html>
