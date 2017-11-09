@@ -1,2 +1,2 @@
-# SOEN287Assign1
-html and css
+# SOEN287 Assignment 1
+html and css exercises 
